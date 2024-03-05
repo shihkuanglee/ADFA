@@ -27,7 +27,7 @@ https://github.com/shihkuanglee/RD-LCNN/
 
 ## Citation Information
 
-Shih-Kuang Lee, “Arbitrary Discrete Fourier Analysis and Its Application in Replayed Speech Detection,” arXiv preprint arXiv:2204.04333, 2022.
+Shih-Kuang Lee, “Arbitrary Discrete Fourier Analysis and Its Application in Replayed Speech Detection,” arXiv preprint arXiv:2403.01130, 2024.
 ```bibtex
 @article{lee2024arbitrary,
   title={{Arbitrary Discrete Fourier Analysis and Its Application in Replayed Speech Detection}},
