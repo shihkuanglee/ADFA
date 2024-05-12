@@ -49,7 +49,7 @@ def adfa_arb(n, n_arb):
     Modify from scipy.linalg.dft implementation of SciPy.
     n_arb is the lenght of the signal you want to analyze.
     """
-    omegas = np.exp(-1j * np.pi * np.arange(n) / n).reshape(-1, 1)
+    omegas = np.exp(-1j * np.pi * np.arange(n) / (n - 1)).reshape(-1, 1)
     m = omegas ** np.arange(n_arb)
     return m
 
