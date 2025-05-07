@@ -13,6 +13,7 @@ pip install -r requirements.txt
 
 Add submodule to your repository:
 ```
+git clone git@github.com:shihkuanglee/ADFA.git
 git submodule add https://github.com/shihkuanglee/ADFA.git
 ```
 
