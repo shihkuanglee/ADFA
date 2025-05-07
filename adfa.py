@@ -64,14 +64,7 @@ def mdfa_arb(n, fs, n_arb):
     return m
 
 def cqfa_arb(n, base, bins, n_arb):
-    """
-    Modify from scipy.linalg.dft implementation of SciPy.
-    n_arb is the lenght of the signal you want to analyze.
-    When base=2, bins means the number of frequency components per octave.
-    """
-    omegas = np.exp(-1j * np.pi * pow(base, -np.arange(n)/bins)[::-1]).reshape(-1, 1)
-    m = omegas ** np.arange(n_arb)
-    return m
+    return cqa_arb(n, base, bins, n_arb)
 
 def cqa_arb(n, base, bins, n_arb):
     """
@@ -79,7 +72,7 @@ def cqa_arb(n, base, bins, n_arb):
     n_arb is the lenght of the signal you want to analyze.
     When base=2, bins means the number of frequency components per octave.
     """
-    # omegas = np.exp(-1j * np.pi * pow(pow(base, -1/int(bins)), np.arange(n))[::-1]).reshape(-1, 1)
-    omegas = np.exp(-1j * np.pi * pow(base, -np.arange(n)/int(bins))[::-1]).reshape(-1, 1)
+    # omegas = np.exp(-1j * np.pi * pow(pow(base, -1/bins), np.arange(n))[::-1]).reshape(-1, 1)
+    omegas = np.exp(-1j * np.pi * pow(base, -np.arange(n)/bins)[::-1]).reshape(-1, 1)
     m = omegas ** np.arange(n_arb)
     return m
