@@ -1,8 +1,8 @@
 ## Introduction
 
-#### This repository provides the software implementation of developed ADFA, MDFA and CQA methods in this study:
+#### This repository provides the software implementation in this study:
 
-[Arbitrary Discrete Fourier Analysis and Its Application in Replayed Speech Detection](https://arxiv.org/abs/2403.01130)
+[Advanced Signal Analysis in Detecting Replay Attacks for Automatic Speaker Verification Systems](https://arxiv.org/abs/2403.01130)
 
 ## Dependencies
 ```
@@ -19,7 +19,7 @@ git submodule add https://github.com/shihkuanglee/ADFA.git
 
 Then the library is now able to be import:
 ```
-from ADFA.adfa import adfa_arb, mdfa_arb, cqa_arb
+from ADFA.adfa import aa_arb, ma_arb, cqa_arb
 ```
 
 ## Example
@@ -28,13 +28,16 @@ https://github.com/shihkuanglee/RD-LCNN/
 
 ## Citation Information
 
-Shih-Kuang Lee, “Arbitrary Discrete Fourier Analysis and Its Application in Replayed Speech Detection,” arXiv preprint arXiv:2403.01130, 2024.
+Lee Shih Kuang, “Advanced Signal Analysis in Detecting Replay Attacks for Automatic Speaker Verification Systems,” arXiv preprint arXiv:2403.01130, 2025.
 ```bibtex
-@article{lee2024arbitrary,
-  title={{Arbitrary Discrete Fourier Analysis and Its Application in Replayed Speech Detection}},
-  author={Shih-Kuang Lee},
-  journal={arXiv preprint arXiv:2403.01130},
-  year={2024}}
+@misc{lee2025adfa,
+      title={Advanced Signal Analysis in Detecting Replay Attacks for Automatic Speaker Verification Systems}, 
+      author={Lee Shih Kuang},
+      year={2025},
+      eprint={2403.01130},
+      archivePrefix={arXiv},
+      primaryClass={eess.AS},
+      url={https://arxiv.org/abs/2403.01130}}
 ```
 
 ## Licensing
